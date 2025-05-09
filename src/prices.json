@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "name": "The Hobbit",
+    "category": "Books",
+    "price": 133.47,
+    "image": "https://www.apple.com/v/iphone-13/f/images/overview/hero/hero_static__e6khcva4hkeq_large.jpg"
+  },
+  {
+    "id": 2,
+    "name": "1984",
+    "category": "Books",
+    "price": 183.54,
+    "image": "https://images.samsung.com/is/image/samsung/assets/global/galaxy-s21/gallery/galaxy-s21_ultra_phantom_black_1.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Sapiens",
+    "category": "Books",
+    "price": 216.56,
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-13-midnight-202206"
+  },
+  {
+    "id": 4,
+    "name": "The Alchemist",
+    "category": "Books",
+    "price": 95.04,
+    "image": "https://m.media-amazon.com/images/I/81iC6YBpt8L._AC_SL1500_.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Atomic Habits",
+    "category": "Books",
+    "price": 99.21,
+    "image": "https://m.media-amazon.com/images/I/71UAXwR5aBL._AC_SL1500_.jpg"
+  },
+  {
+    "id": 6,
+    "name": "To Kill a Mockingbird",
+    "category": "Books",
+    "price": 106.52,
+    "image": "https://m.media-amazon.com/images/I/81L2M0U2QSL._AC_SL1500_.jpg"
+  },
+  {
+    "id": 7,
+    "name": "The Great Gatsby",
+    "category": "Books",
+    "price": 215.06,
+    "image": "https://m.media-amazon.com/images/I/71jG+e7roXL._AC_SL1500_.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Educated",
+    "category": "Books",
+    "price": 196.02,
+    "image": "https://m.media-amazon.com/images/I/71V--WZVUIL._AC_SL1500_.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Becoming",
+    "category": "Books",
+    "price": 121.17,
+    "image": "https://m.media-amazon.com/images/I/61Iz2yy2CKL._AC_SL1500_.jpg"
+  },
+  {
+    "id": 10,
+    "name": "The Catcher in the Rye",
+    "category": "Books",
+    "price": 176.41,
+    "image": "https://m.media-amazon.com/images/I/81-349iYbfL.jpg"
+  },
+  {
+    "id": 11,
+    "name": "The Power of Now",
+    "category": "Books",
+    "price": 208.34,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 12,
+    "name": "Thinking, Fast and Slow",
+    "category": "Books",
+    "price": 96.28,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 13,
+    "name": "Man\u2019s Search for Meaning",
+    "category": "Books",
+    "price": 84.06,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 14,
+    "name": "The Four Agreements",
+    "category": "Books",
+    "price": 194.74,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 15,
+    "name": "The Subtle Art of Not Giving a F*ck",
+    "category": "Books",
+    "price": 31.19,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 16,
+    "name": "The Book Thief",
+    "category": "Books",
+    "price": 279.22,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 17,
+    "name": "The Road",
+    "category": "Books",
+    "price": 195.78,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 18,
+    "name": "A Little Life",
+    "category": "Books",
+    "price": 296.06,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 19,
+    "name": "Outliers",
+    "category": "Books",
+    "price": 85.24,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 20,
+    "name": "Quiet",
+    "category": "Books",
+    "price": 18.53,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 21,
+    "name": "Sony WH-1000XM4",
+    "category": "Electronics",
+    "price": 29.0,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 22,
+    "name": "Apple AirPods Pro",
+    "category": "Electronics",
+    "price": 144.29,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 23,
+    "name": "Amazon Echo Dot",
+    "category": "Electronics",
+    "price": 109.49,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 24,
+    "name": "Google Nest Hub",
+    "category": "Electronics",
+    "price": 30.47,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 25,
+    "name": "MacBook Air M2",
+    "category": "Electronics",
+    "price": 241.14,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 26,
+    "name": "iPad Pro",
+    "category": "Electronics",
+    "price": 43.48,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 27,
+    "name": "Logitech MX Master 3",
+    "category": "Electronics",
+    "price": 136.81,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 28,
+    "name": "Samsung Galaxy Tab S9",
+    "category": "Electronics",
+    "price": 272.34,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 29,
+    "name": "Kindle Paperwhite",
+    "category": "Electronics",
+    "price": 113.66,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 30,
+    "name": "Canon EOS M50",
+    "category": "Electronics",
+    "price": 273.67,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 31,
+    "name": "GoPro HERO10",
+    "category": "Electronics",
+    "price": 296.48,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 32,
+    "name": "Anker PowerCore",
+    "category": "Electronics",
+    "price": 97.46,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 33,
+    "name": "Fitbit Charge 5",
+    "category": "Electronics",
+    "price": 271.01,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 34,
+    "name": "Ring Video Doorbell",
+    "category": "Electronics",
+    "price": 232.9,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 35,
+    "name": "Nintendo Switch",
+    "category": "Electronics",
+    "price": 97.19,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 36,
+    "name": "Apple Watch Series 9",
+    "category": "Electronics",
+    "price": 171.64,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 37,
+    "name": "Dell XPS 13",
+    "category": "Electronics",
+    "price": 277.48,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 38,
+    "name": "Bose SoundLink",
+    "category": "Electronics",
+    "price": 72.31,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 39,
+    "name": "Roku Streaming Stick",
+    "category": "Electronics",
+    "price": 20.91,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 40,
+    "name": "Tile Pro Tracker",
+    "category": "Electronics",
+    "price": 193.73,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 41,
+    "name": "Abbey Road - The Beatles",
+    "category": "Music",
+    "price": 227.4,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 42,
+    "name": "Thriller - Michael Jackson",
+    "category": "Music",
+    "price": 115.66,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 43,
+    "name": "1989 - Taylor Swift",
+    "category": "Music",
+    "price": 133.96,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 44,
+    "name": "30 - Adele",
+    "category": "Music",
+    "price": 228.6,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 45,
+    "name": "After Hours - The Weeknd",
+    "category": "Music",
+    "price": 117.17,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 46,
+    "name": "DAMN. - Kendrick Lamar",
+    "category": "Music",
+    "price": 65.54,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 47,
+    "name": "Fine Line - Harry Styles",
+    "category": "Music",
+    "price": 170.06,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 48,
+    "name": "Evermore - Taylor Swift",
+    "category": "Music",
+    "price": 252.46,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 49,
+    "name": "Lover - Taylor Swift",
+    "category": "Music",
+    "price": 124.85,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 50,
+    "name": "SOUR - Olivia Rodrigo",
+    "category": "Music",
+    "price": 170.02,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 51,
+    "name": "Random Access Memories - Daft Punk",
+    "category": "Music",
+    "price": 125.58,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 52,
+    "name": "Born to Die - Lana Del Rey",
+    "category": "Music",
+    "price": 56.69,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 53,
+    "name": "Back to Black - Amy Winehouse",
+    "category": "Music",
+    "price": 192.85,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 54,
+    "name": "In Rainbows - Radiohead",
+    "category": "Music",
+    "price": 172.98,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 55,
+    "name": "Melodrama - Lorde",
+    "category": "Music",
+    "price": 255.57,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 56,
+    "name": "The Fame - Lady Gaga",
+    "category": "Music",
+    "price": 269.08,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 57,
+    "name": "Good Kid, M.A.A.D City",
+    "category": "Music",
+    "price": 280.92,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 58,
+    "name": "Future Nostalgia - Dua Lipa",
+    "category": "Music",
+    "price": 89.42,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 59,
+    "name": "Rumours - Fleetwood Mac",
+    "category": "Music",
+    "price": 133.09,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 60,
+    "name": "21 - Adele",
+    "category": "Music",
+    "price": 129.94,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 61,
+    "name": "Dyson V15 Detect",
+    "category": "Home",
+    "price": 265.45,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 62,
+    "name": "iRobot Roomba i7+",
+    "category": "Home",
+    "price": 130.87,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 63,
+    "name": "Philips Hue Smart Kit",
+    "category": "Home",
+    "price": 210.23,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 64,
+    "name": "Instant Pot Duo",
+    "category": "Home",
+    "price": 168.31,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 65,
+    "name": "Brita Water Filter Pitcher",
+    "category": "Home",
+    "price": 208.41,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 66,
+    "name": "Levoit Air Purifier",
+    "category": "Home",
+    "price": 51.19,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 67,
+    "name": "Shark Navigator Lift-Away",
+    "category": "Home",
+    "price": 197.61,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 68,
+    "name": "Nest Thermostat",
+    "category": "Home",
+    "price": 220.2,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 69,
+    "name": "Keurig K-Supreme",
+    "category": "Home",
+    "price": 276.68,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 70,
+    "name": "IKEA Floor Lamp",
+    "category": "Home",
+    "price": 15.69,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 71,
+    "name": "Black+Decker Dustbuster",
+    "category": "Home",
+    "price": 37.15,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 72,
+    "name": "Ecobee SmartThermostat",
+    "category": "Home",
+    "price": 195.03,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 73,
+    "name": "Himalayan Salt Lamp",
+    "category": "Home",
+    "price": 184.57,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 74,
+    "name": "Sonos One",
+    "category": "Home",
+    "price": 174.37,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 75,
+    "name": "Tineco Floor One S5",
+    "category": "Home",
+    "price": 241.52,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 76,
+    "name": "Eufy Video Doorbell",
+    "category": "Home",
+    "price": 76.31,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 77,
+    "name": "Ring Alarm System",
+    "category": "Home",
+    "price": 148.76,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 78,
+    "name": "Ninja Air Fryer",
+    "category": "Home",
+    "price": 197.57,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 79,
+    "name": "HoMedics White Noise Machine",
+    "category": "Home",
+    "price": 270.44,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 80,
+    "name": "iHome Smart Plug",
+    "category": "Home",
+    "price": 26.6,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 81,
+    "name": "Zojirushi Rice Cooker",
+    "category": "Kitchen",
+    "price": 288.03,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 82,
+    "name": "Breville Smart Oven",
+    "category": "Kitchen",
+    "price": 101.94,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 83,
+    "name": "Zwilling Knife Set",
+    "category": "Kitchen",
+    "price": 213.34,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 84,
+    "name": "KitchenAid Stand Mixer",
+    "category": "Kitchen",
+    "price": 192.78,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 85,
+    "name": "Nespresso Vertuo",
+    "category": "Kitchen",
+    "price": 281.08,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 86,
+    "name": "Lodge Cast Iron Skillet",
+    "category": "Kitchen",
+    "price": 161.03,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 87,
+    "name": "OXO Salad Spinner",
+    "category": "Kitchen",
+    "price": 225.41,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 88,
+    "name": "SodaStream Terra",
+    "category": "Kitchen",
+    "price": 290.78,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 89,
+    "name": "Hamilton Beach Blender",
+    "category": "Kitchen",
+    "price": 32.59,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 90,
+    "name": "All-Clad Stainless Cookware",
+    "category": "Kitchen",
+    "price": 103.38,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 91,
+    "name": "Cuisinart Griddler",
+    "category": "Kitchen",
+    "price": 244.05,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 92,
+    "name": "Kitchenaid Food Processor",
+    "category": "Kitchen",
+    "price": 205.68,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 93,
+    "name": "Mueller Austria Toaster",
+    "category": "Kitchen",
+    "price": 242.07,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 94,
+    "name": "Instant Vortex Plus",
+    "category": "Kitchen",
+    "price": 226.25,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 95,
+    "name": "Dash Egg Cooker",
+    "category": "Kitchen",
+    "price": 54.92,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 96,
+    "name": "Cosori Air Fryer",
+    "category": "Kitchen",
+    "price": 258.81,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 97,
+    "name": "GE Countertop Microwave",
+    "category": "Kitchen",
+    "price": 177.03,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 98,
+    "name": "Keurig Mini",
+    "category": "Kitchen",
+    "price": 138.02,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 99,
+    "name": "Vitamix E310",
+    "category": "Kitchen",
+    "price": 35.2,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  },
+  {
+    "id": 100,
+    "name": "Anova Sous Vide Precision Cooker",
+    "category": "Kitchen",
+    "price": 23.39,
+    "image": "https://via.placeholder.com/300x300.png?text=Image"
+  }
+]
