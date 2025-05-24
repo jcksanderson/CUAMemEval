@@ -81,7 +81,7 @@ class Prompted:
                 self.question_type = "item_remove_count"
         elif "open the store" in raw_track_prompt:
             self.question_type = "open_store_count"
-            self.answer = 0
+            self.answer = 1
         elif "close the store" in raw_track_prompt:
             self.question_type = "close_store_count"
             self.answer = 0
