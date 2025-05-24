@@ -1,7 +1,7 @@
 import random
 from gen_menial import Vars, MenialGenerator
 
-class ExplicitPrompted:
+class Prompted:
     MAX_INJECTED_OCCURRENCES_PER_100 = 8 # Max occurrences for injection scaling
 
     def __init__(self, prompted: bool = True):
