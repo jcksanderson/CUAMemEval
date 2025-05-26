@@ -42,7 +42,8 @@ def json_to_item_price_dictionary(filepath):
         return {}
 
 if __name__ == "__main__":
-    json_filepath = "prices.json"
+    # Update to use the correct path for the benchmark
+    json_filepath = "../../amazon/data/products.json"
 
     print(f"Attempting to read product data from: '{json_filepath}'")
 

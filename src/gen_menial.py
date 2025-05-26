@@ -1,8 +1,12 @@
 import random
+import os
 from parse_prices import json_to_item_price_dictionary
 
 class Vars:
-    PRICES = json_to_item_price_dictionary("prices.json")
+    # Get the path to the amazon products.json file
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    prices_path = os.path.join(current_dir, "../../amazon/data/products.json")
+    PRICES = json_to_item_price_dictionary(prices_path)
     ITEM_LIST = tuple(PRICES.keys())
     TOGGLE_LIST = ('student discount', 'dark mode', 'international shipping')
     PRICE_LIST = ('$50', '$100', '$150', '$200')
@@ -13,8 +17,6 @@ class MenialGenerator:
         'Open the store.',
         'Close the store',
         'Add <item> to your cart.',
-        'Remove every item above <price-floor> from your cart.',
-        'Remove every item below <price-ceiling> from your cart.',
         'If <item> is not in your cart, add it.',
         'If <item> is in your cart, remove it.',
         'Toggle <toggle> on.',

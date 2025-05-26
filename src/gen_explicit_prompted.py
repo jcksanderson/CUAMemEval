@@ -10,16 +10,12 @@ class ExplicitPrompted:
             ('Track how many times you add <item> to your cart.', 'How many times did you add <item> to your cart?'),
             ('Track how many times you remove <item> from your cart.', 'How many times did you remove <item> from your cart?'),
             ('Track how many times you open the store.', 'How many times did you open the store?'),
-            ('Track how many times you close the store.', 'How many times did you close the store?'),
-            ('Track if <toggle> last toggled on or off.', '<close>Was <toggle> last toggled on?')
         )
         self.PROBABILITIES = (
             0.10,  # toggle count
             0.25,  # item add count
             0.35,  # item remove count
             0.10,  # open store count
-            0.10,  # close store count
-            0.10   # toggle last state
         )
         self.menial_gen = MenialGenerator() 
         self.prompted = prompted
@@ -63,9 +59,6 @@ class ExplicitPrompted:
             if "how many times" in raw_track_prompt:
                 self.question_type = "toggle_count"
                 self.answer = 0
-            elif "last toggled on or off" in raw_track_prompt:
-                self.question_type = "toggle_last_state"
-                self.answer = 0 # Default to 'off', 1 will mean 'on/yes'
         elif "<item>" in raw_track_prompt:
             items_with_prices = list(Vars.PRICES.keys())
             if not items_with_prices: 
@@ -81,10 +74,10 @@ class ExplicitPrompted:
                 self.question_type = "item_remove_count"
         elif "open the store" in raw_track_prompt:
             self.question_type = "open_store_count"
-            self.answer = 0
-        elif "close the store" in raw_track_prompt:
-            self.question_type = "close_store_count"
-            self.answer = 0
+            # The benchmark automatically navigates to the store URL,
+            # which implicitly opens the store once before any menial actions run.
+            # Start the answer counter at 1 to reflect this initial opening.
+            self.answer = 1
         else:
             self.question_type = "unknown" 
             self.answer = -99 
@@ -98,6 +91,35 @@ class ExplicitPrompted:
             prompts.append(self.prompt_pair[0]) 
 
         menial_actions = self.menial_gen.gen(num_menial)
+
+        # ------------------------------------------------------------------
+        # Remove any intermediate open/close store actions to avoid
+        # unintended count increments or confusion during benchmark runs.
+        # ------------------------------------------------------------------
+        menial_actions = [
+            a
+            for a in menial_actions
+            if a not in (
+                "Open the store.",
+                "Open the store",
+                "Close the store.",
+                "Close the store",
+            )
+        ]
+
+        # If filtering removed actions, top-up the list so its length equals the requested num_menial
+        banned = {
+            "Open the store.",
+            "Open the store",
+            "Close the store.",
+            "Close the store",
+        }
+
+        while len(menial_actions) < num_menial:
+            # Fetch a single new menial action
+            new_action = self.menial_gen.gen(1)[0]
+            if new_action not in banned:
+                menial_actions.append(new_action)
 
         # --- Start: Ensure specific item actions occur if tracking item add/remove count ---
         if self.specific_entity_tracked and \
@@ -141,7 +163,8 @@ class ExplicitPrompted:
 
 
         # State trackers
-        store_is_currently_open = False 
+        # For open-store count we start with the store already open due to the initial navigation
+        store_is_currently_open = True if self.question_type == "open_store_count" else False 
         last_action_on_specific_toggle_for_count = None # Stores "on" or "off"
         specific_item_is_in_cart = False # Tracks if the specific_entity_tracked (item) is in cart
 
@@ -180,11 +203,6 @@ class ExplicitPrompted:
                     if last_action_on_specific_toggle_for_count != "off":
                         self.answer += 1
                     last_action_on_specific_toggle_for_count = "off"
-            elif self.question_type == "toggle_last_state" and self.specific_entity_tracked:
-                if f"Toggle {self.specific_entity_tracked} on." == menial_action:
-                    self.answer = 1 
-                elif f"Toggle {self.specific_entity_tracked} off." == menial_action:
-                    self.answer = 0 
             elif self.question_type == "item_add_count" and self.specific_entity_tracked:
                 if menial_action == f"Add {self.specific_entity_tracked} to your cart." or \
                    menial_action == f"If {self.specific_entity_tracked} is not in your cart, add it.":
@@ -210,15 +228,6 @@ class ExplicitPrompted:
                 if menial_action == "Open the store.":
                     if not store_is_currently_open:
                         self.answer += 1
-                    store_is_currently_open = True
-                elif menial_action == "Close the store": 
-                    store_is_currently_open = False
-            elif self.question_type == "close_store_count":
-                if menial_action == "Close the store": 
-                    if store_is_currently_open: 
-                        self.answer += 1
-                    store_is_currently_open = False
-                elif menial_action == "Open the store.":
                     store_is_currently_open = True
         
         prompts.extend(menial_actions) 
